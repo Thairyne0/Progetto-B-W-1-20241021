@@ -1,0 +1,94 @@
+
+body {
+    background-image: url(../ASSET/bg.jpg);
+    background-size: cover;
+    color: #EBE7EE;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+header {
+    height: 200px;
+}
+
+header img {
+    width: 200px;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+main {
+    margin: 100px 0;
+    text-align: center;
+}
+
+main article {
+    margin: 0 auto;
+    width: 35%;
+    /* padding: 0 400px; */
+    margin-bottom: 70px;
+}
+main div {
+    margin-top: 20px;
+}
+
+main h1 {
+    font-size: 60px;
+}
+
+main h1 strong {
+    font-weight: 700;
+}
+
+main button {
+    font-size: 1.2em;
+    position: relative;
+    border: 3px solid transparent;
+    color: white;
+    width: 330px;
+    height: 70px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.164);
+    background-clip: padding-box;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+main button::after{
+    position: absolute;
+    top: -3px; bottom: -3px;
+    left: -3px; right: -3px;
+    background: linear-gradient(344deg, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 100%);
+    content: '';
+    z-index: -1;
+    border-radius: 40px;
+}
+
+main #div-next-button {
+    margin-top: 50px;
+}
+
+main #next-button {
+    background-color: #C4008F;
+    border: none;
+    height: 50px;
+    width: 200px;
+    font-size: 1.3em;
+}
+
+#next-button i {
+    margin-left: 5px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 1.2em;
+}
+
+footer strong {
+    color: #C4008F;
+}
+
