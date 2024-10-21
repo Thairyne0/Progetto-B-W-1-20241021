@@ -17,9 +17,21 @@ main {
 
 h1 {
   color: #e7e7eb;
+  font-size: 60px;
+  font-weight: bold;
+  padding-bottom: 10px;
 }
 
 #stars {
+}
+
+#stars img {
+  filter: brightness(0) saturate(100%) invert(13%) sepia(67%) saturate(1425%)
+    hue-rotate(211deg) brightness(81%) contrast(105%);
+  cursor: pointer;
+}
+
+#star1 {
 }
 
 #stars div {
