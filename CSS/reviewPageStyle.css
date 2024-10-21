@@ -1,59 +1,77 @@
-body{
-    background-image: url(../ASSET/bg.jpg);
-    width: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Outfit", sans-serif;
-    
-    
+body {
+  background-image: url(../ASSET/bg.jpg);
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Outfit", sans-serif;
 }
 
+body section form {
+  margin-top: 2em;
+}
 
 main {
-    text-align: center;
-    margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
 }
 
-h1{
-    color: #E7E7EB;
-
+h1 {
+  color: #e7e7eb;
 }
 
-#stars{
-    
+#stars {
 }
 
 #stars div {
-    display: inline-block;
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-bottom: 70px;
-    
-
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-bottom: 70px;
 }
 
 #logo img {
-    width: 130px;
-    padding: 40px 100px;
-    
+  width: 130px;
+  padding: 40px 100px;
 }
 
-.p-review{
-    color: #f0e9f1db;
-    font-size: 1.5em;
-    padding: 10px 280px;
-    font-family: "Inter", sans-serif;
-
+.p-review {
+  color: #f0e9f1db;
+  font-size: 1.5em;
+  padding: 10px 280px;
+  font-family: "Inter", sans-serif;
+  line-height: 35px;
 }
 
-#feedback{
-
+#feedback {
+  background: none;
+  border: none;
+  width: 54%;
+  font-size: 16px;
+  color: #f0e9f1db;
+  outline: none;
 }
 #feedback label {
-    
-
 }
 
-#info-button{
+#info-button {
+  color: #00ffff;
+}
 
+#info-button button {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 15px 35px;
+  border: #00ffff;
+  margin: 2em;
+  box-shadow: 0px 0px 20px 6px rgba(0, 255, 255, 0.65);
+  background: #00ffff;
+  cursor: pointer;
+}
+body#tinymce {
+  background: #610064;
+}
+
+hr {
+  margin: 1% 20%;
+  border: solid #c2128d 1px;
 }
