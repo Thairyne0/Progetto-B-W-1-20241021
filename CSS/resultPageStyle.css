@@ -17,6 +17,10 @@ body {
   font-size: 30px;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 #logo {
   width: 25%;
 }
@@ -33,15 +37,27 @@ body {
 
 #chart-and-percentage-container {
   text-align: center;
+  margin-top: 5em;
+}
+
+#wrong-answers-container,
+#correct-answers-container {
+  text-align: left;
+}
+
+#wrong-stats,
+#correct-stats {
+  font-size: 20px;
 }
 
 #rate-us {
   display: block;
+  font-weight: 600;
   margin-top: 5em;
   margin-left: auto;
   margin-right: auto;
   background-color: transparent;
   color: white;
-  padding: 0.5em 2em;
+  padding: 0.5em 2.8em;
   border: 2px solid white;
 }

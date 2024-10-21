@@ -25,7 +25,7 @@
 
     <main>
       <section id="title-container">
-        <h1 class="outfit-font">Results</h1>
+        <h1 class="outfit-font bold">Results</h1>
         <p class="inter-font">The summary of your answers:</p>
       </section>
 
@@ -34,13 +34,14 @@
         <!-- section con la percentuale di risposte corrette -->
         <section id="correct-answers-container">
           <h2 id="correct-title" class="outfit-font">Correct</h2>
-          <h3 id="correct-percentage" class="inter-font"></h3>
-          <p id="correct-stats" class="inter-font"></p>
+          <h3 id="correct-percentage" class="outfit-font bold">66.7%</h3>
+          <p id="correct-stats" class="inter-font">4/6 questions</p>
         </section>
 
         <!-- section con il grafico di risposte corrette ed errate -->
         <section id="chart-container">
-          <canvas id="donut-chart"></canvas>
+          <!-- conterrà il grafico con le percentuali di risposte corrette ed errate -->
+          <canvas id="donut-chart"> </canvas>
           <div id="chart-text">
             <h3 id="congrats"></h3>
             <h3 id="results-description" class="outfit-font"></h3>
@@ -51,8 +52,8 @@
         <!-- section con la percentuale di risposte errate -->
         <section id="wrong-answers-container">
           <h2 id="wrong-title" class="outfit-font">Wrong</h2>
-          <h3 id="wrong-percentage" class="inter-font"></h3>
-          <p id="wrong-stats" class="inter-font"></p>
+          <h3 id="wrong-percentage" class="outfit-font bold">33.3%</h3>
+          <p id="wrong-stats" class="inter-font">2/6 questions</p>
         </section>
 
         <!-- button per passare alla sezione 'RATE US' -->
