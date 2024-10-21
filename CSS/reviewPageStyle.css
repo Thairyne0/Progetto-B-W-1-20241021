@@ -14,16 +14,24 @@ main {
     margin-top: 50px;
 }
 
-h1{
-    color: #E7E7EB;
-    font-size: 60px;
-    font-weight: bold;
-    padding-bottom: 10px;
-
+h1 {
+  color: #e7e7eb;
+  font-size: 60px;
+  font-weight: bold;
+  padding-bottom: 10px;
 }
 
 #stars{
     
+}
+
+#stars img {
+  filter: brightness(0) saturate(100%) invert(13%) sepia(67%) saturate(1425%)
+    hue-rotate(211deg) brightness(81%) contrast(105%);
+  cursor: pointer;
+}
+
+#star1 {
 }
 
 #stars div {
@@ -36,22 +44,19 @@ h1{
 }
 
 #logo img {
-    width: 150px;
-    padding: 40px 100px;
-    
+  width: 130px;
+  padding: 40px 100px;
 }
 
-.p-review{
-    color: #f0e9f1db;
-    font-size: 16px;
-    padding: 10px 280px;
-    font-family: "Inter", sans-serif;
-
+.p-review {
+  color: #f0e9f1db;
+  font-size: 1.5em;
+  padding: 10px 280px;
+  font-family: "Inter", sans-serif;
+  line-height: 35px;
 }
 
-#feedback{
 
-}
 #feedback label {
     
 
