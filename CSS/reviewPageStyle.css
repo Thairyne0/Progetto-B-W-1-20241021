@@ -1,14 +1,47 @@
 body{
     background-image: url(../ASSET/bg.jpg);
     width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Outfit", sans-serif;
+    
     
 }
 
-#logo {
+
+main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1{
 
 }
 
+#stars{
+    
+}
+
+#stars div {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 70px;
+    
+
+}
+
+#logo img {
+    width: 130px;
+    padding: 40px 100px;
+    
+}
+
 .p-review{
+    color: #f0e9f1db;
+    font-size: 1.5em;
+    padding: 10px 280px;
+    font-family: "Inter", sans-serif;
 
 }
 
@@ -16,6 +49,7 @@ body{
 
 }
 #feedback label {
+    
 
 }
 
