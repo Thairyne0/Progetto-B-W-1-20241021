@@ -16,6 +16,9 @@ main {
 
 h1{
     color: #E7E7EB;
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 10px;
 
 }
 
@@ -33,14 +36,14 @@ h1{
 }
 
 #logo img {
-    width: 130px;
+    width: 150px;
     padding: 40px 100px;
     
 }
 
 .p-review{
     color: #f0e9f1db;
-    font-size: 1.5em;
+    font-size: 16px;
     padding: 10px 280px;
     font-family: "Inter", sans-serif;
 
