@@ -52,23 +52,52 @@ strong{
     font-weight: bold;
 }
 
-#checkbox{
-    margin-top: 100px;
-    margin-left: 150px;
-    border: 2px solid white;
+input[type="checkbox"] {
+    display: none;
 }
 
+/*#checkbox{
+    margin-top: 100px;
+    margin-left: 150px;
+    
+}*/
+.custom-checkbox {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    
+}
+input[type="checkbox"]:checked + .custom-checkbox::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 label{
+    margin-left: 10px;
     color: white;
     font-weight: 500;
 }
 
+form{
+    margin-top: 100px; 
+    margin-left: 150px; 
+    display: inline-block;
+}
 div{
     display: inline-block;
 }
 button{
-    margin-inline: 250px;
-    font-size: 1em;
+    margin-left: 250px;
+    font-size: 1.25em;
     font-weight: bold;
     color: #000030;
     padding: 17px 50px;
