@@ -3,7 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>RESULTS</title>
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/resultPageStyle.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <img src="../ASSET/epicode_logo.png" alt="epicode_logo" id="logo" />
+    </header>
+
+    <main>
+      <h1>Results</h1>
+      <p>The summary of your answers:</p>
+
+      <!-- article con percentuali risposte corrette/errate + donut-chart -->
+      <article id="chart-and-percentage-container">
+        <!-- section con la percentuale di risposte corrette -->
+        <section id="correct-answers-container"></section>
+
+        <!-- section con il grafico di risposte corrette ed errate -->
+        <section id="chart-container"></section>
+
+        <!-- section con la percentuale di risposte errate -->
+        <section id="wrong-answers-container"></section>
+      </article>
+    </main>
+  </body>
 </html>

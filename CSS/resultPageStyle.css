@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url('../ASSET/bg.jpg');
+  background-size: cover;
+  padding: 3em 12em;
+  color: white;
+}
+
+#logo {
+  width: 15%;
+}
