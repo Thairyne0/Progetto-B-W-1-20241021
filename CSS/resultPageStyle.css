@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url('../ASSET/bg.jpg');
+  background-size: cover;
+  padding: 3em 12em;
+  color: white;
+}
+
+.outfit-font {
+  font-family: 'Outfit', sans-serif;
+  font-size: 60px;
+}
+
+.inter-font {
+  font-family: 'Outfit', sans-serif;
+  font-size: 30px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#logo {
+  width: 15%;
+  cursor: pointer;
+}
+
+#title-container {
+  text-align: center;
+}
+
+main {
+  margin-top: 5em;
+}
+
+#chart-container,
+#correct-answers-container,
+#wrong-answers-container {
+  display: inline-block;
+}
+
+#chart-and-percentage-container {
+  text-align: center;
+  margin-top: 5em;
+}
+
+#wrong-answers-container,
+#correct-answers-container {
+  text-align: left;
+}
+
+#wrong-stats,
+#correct-stats {
+  font-size: 20px;
+}
+
+#rate-us {
+  display: block;
+  font-weight: 600;
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  color: white;
+  padding: 0.5em 2.8em;
+  border: 2px solid white;
+  cursor: pointer;
+}
