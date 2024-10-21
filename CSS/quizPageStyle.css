@@ -2,7 +2,9 @@
 body {
     background-image: url(../ASSET/bg.jpg);
     background-size: cover;
-    color: white;
+    color: #EBE7EE;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
 }
 
 header {
@@ -16,13 +18,13 @@ header img {
 }
 
 main {
-    margin-top: 100px;
+    margin: 100px 0;
     text-align: center;
 }
 
 main article {
     margin: 0 auto;
-    width: 30%;
+    width: 35%;
     /* padding: 0 400px; */
     margin-bottom: 70px;
 }
@@ -39,11 +41,15 @@ main h1 strong {
 }
 
 main button {
+    border-radius: 40px;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    background-color: #C4008F;
+    border-image-source: linear-gradient(347deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%);
     color: white;
     width: 330px;
     height: 70px;
-    /* border: 2px solid transparent; */
-    border-radius: 40px;
     background-color: rgba(255, 255, 255, 0.192);
     margin: 0 20px;
 }
@@ -62,4 +68,16 @@ main #next-button {
 
 #next-button i {
     margin-left: 5px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 1.2em;
+}
+
+footer strong {
+    color: #C4008F;
 }
