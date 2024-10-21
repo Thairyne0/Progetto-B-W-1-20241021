@@ -32,7 +32,7 @@ body {
 }
 
 main {
-  margin-top: 5em;
+  margin-top: 2em;
 }
 
 /* #chart-container,
@@ -62,7 +62,7 @@ main {
 #rate-us {
   display: block;
   font-weight: 600;
-  margin-top: 5em;
+  margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
   background-color: transparent;
