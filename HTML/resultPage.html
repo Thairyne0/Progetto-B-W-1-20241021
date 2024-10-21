@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="../CSS/resultPageStyle.css" />
   </head>
   <body>
@@ -20,17 +25,17 @@
 
     <main>
       <section id="title-container">
-        <h1>Results</h1>
-        <p>The summary of your answers:</p>
+        <h1 class="outfit-font">Results</h1>
+        <p class="inter-font">The summary of your answers:</p>
       </section>
 
       <!-- article con percentuali risposte corrette/errate + donut-chart -->
       <article id="chart-and-percentage-container">
         <!-- section con la percentuale di risposte corrette -->
         <section id="correct-answers-container">
-          <h2 id="correct-title">Correct</h2>
-          <p id="correct-percentage"></p>
-          <p id="correct-stats"></p>
+          <h2 id="correct-title" class="outfit-font">Correct</h2>
+          <p id="correct-percentage" class="inter-font"></p>
+          <p id="correct-stats" class="inter-font"></p>
         </section>
 
         <!-- section con il grafico di risposte corrette ed errate -->
@@ -38,20 +43,20 @@
           <canvas id="donut-chart"></canvas>
           <div id="chart-text">
             <h3 id="congrats"></h3>
-            <h3 id="results-description"></h3>
-            <p id="instructions-after-results"></p>
+            <h3 id="results-description" class="outfit-font"></h3>
+            <p id="instructions-after-results" class="inter-font"></p>
           </div>
         </section>
 
         <!-- section con la percentuale di risposte errate -->
         <section id="wrong-answers-container">
-          <h2 id="wrong-title">Wrong</h2>
-          <p id="wrong-percentage"></p>
-          <p id="wrong-stats"></p>
+          <h2 id="wrong-title" class="outfit-font">Wrong</h2>
+          <p id="wrong-percentage" class="inter-font"></p>
+          <p id="wrong-stats" class="inter-font"></p>
         </section>
 
         <!-- button per passare alla sezione 'RATE US' -->
-        <button id="rate-us">RATE us</button>
+        <button id="rate-us" class="inter-font">RATE US</button>
       </article>
     </main>
   </body>
