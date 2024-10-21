@@ -59,3 +59,7 @@ main #next-button {
     width: 200px;
     font-size: 1.3em;
 }
+
+#next-button i {
+    margin-left: 5px;
+}
