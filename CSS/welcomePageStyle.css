@@ -1,78 +1,75 @@
-body{
-    background-image: url(/ASSET/bg.jpg);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family:"Outfit", sans-serif;
-    
+body {
+  background-image: url('../ASSET/bg.jpg');
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Outfit', sans-serif;
 }
 
-#logo{
-    margin-top: 40px;
-    margin-left: 150px;
-    width: 40px 100px;
+#logo {
+  margin-top: 40px;
+  margin-left: 150px;
+  width: 40px 100px;
 }
 
-h1{
-    margin-top: 70px;
-    font-size: 70px;
-    color: white;
-    margin-left: 150px;
+h1 {
+  margin-top: 70px;
+  font-size: 70px;
+  color: white;
+  margin-left: 150px;
 }
 
-
-h2{
-   font-size: 30px;
-   font-weight: bold;
-   margin-left: 150px;
-   margin-top:30px ;
-   margin-bottom: 10px;
-   color: #d20094 ;
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 150px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #d20094;
 }
 
-p{
-    color: white;
-    margin-left: 150px;
-    font-weight: 300;
-    font-size: 16px;
-    margin-bottom: 40px; 
+p {
+  color: white;
+  margin-left: 150px;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 40px;
 }
 
-ul li{
-    color:white;
-    margin-left: 170px;
-    font-weight: 300;
-    font-size: 16px;
-    list-style-type:disc;
-    line-height: 25px;
+ul li {
+  color: white;
+  margin-left: 170px;
+  font-weight: 300;
+  font-size: 16px;
+  list-style-type: disc;
+  line-height: 25px;
 }
 
-strong{
-    
-    font-weight: bold;
+strong {
+  font-weight: bold;
 }
 
-#checkbox{
-    margin-top: 100px;
-    margin-left: 150px;
-    border: 2px solid white;
+#checkbox {
+  margin-top: 100px;
+  margin-left: 150px;
+  border: 2px solid white;
 }
 
-label{
-    color: white;
-    font-weight: 500;
+label {
+  color: white;
+  font-weight: 500;
 }
 
-div{
-    display: inline-block;
+div {
+  display: inline-block;
 }
-button{
-    margin-inline: 250px;
-    font-size: 1em;
-    font-weight: bold;
-    color: #000030;
-    padding: 17px 50px;
-    border: #00ffff;
-    box-shadow: 0px 0px 20px 6px rgba(0, 255, 255, 0.65);
-    background: #00ffff;
+button {
+  margin-inline: 250px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #000030;
+  padding: 17px 50px;
+  border: #00ffff;
+  box-shadow: 0px 0px 20px 6px rgba(0, 255, 255, 0.65);
+  background: #00ffff;
 }
