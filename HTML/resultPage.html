@@ -3,7 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>RESULTS</title>
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../CSS/resultPageStyle.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <img src="../ASSET/epicode_logo.png" alt="epicode_logo" id="logo" />
+    </header>
+
+    <main>
+      <section id="title-container">
+        <h1 class="outfit-font bold">Results</h1>
+        <p class="inter-font">The summary of your answers:</p>
+      </section>
+
+      <!-- article con percentuali risposte corrette/errate + donut-chart -->
+      <article id="chart-and-percentage-container">
+        <!-- section con la percentuale di risposte corrette -->
+        <section id="correct-answers-container">
+          <h2 id="correct-title" class="outfit-font">Correct</h2>
+          <h3 id="correct-percentage" class="outfit-font bold">66.7%</h3>
+          <p id="correct-stats" class="inter-font">4/6 questions</p>
+        </section>
+
+        <!-- section con il grafico di risposte corrette ed errate -->
+        <section id="chart-container">
+          <!-- conterrà il grafico con le percentuali di risposte corrette ed errate -->
+          <canvas id="donut-chart"> </canvas>
+          <div id="chart-text">
+            <h3 id="congrats"></h3>
+            <h3 id="results-description" class="outfit-font"></h3>
+            <p id="instructions-after-results" class="inter-font"></p>
+          </div>
+        </section>
+
+        <!-- section con la percentuale di risposte errate -->
+        <section id="wrong-answers-container">
+          <h2 id="wrong-title" class="outfit-font">Wrong</h2>
+          <h3 id="wrong-percentage" class="outfit-font bold">33.3%</h3>
+          <p id="wrong-stats" class="inter-font">2/6 questions</p>
+        </section>
+
+        <!-- button per passare alla sezione 'RATE US' -->
+        <button id="rate-us" class="inter-font">RATE US</button>
+      </article>
+    </main>
+  </body>
 </html>
