@@ -23,6 +23,7 @@ body {
 
 #logo {
   width: 15%;
+  cursor: pointer;
 }
 
 #title-container {
