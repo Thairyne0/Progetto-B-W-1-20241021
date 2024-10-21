@@ -8,5 +8,14 @@ body {
 }
 
 #logo {
-  width: 15%;
+  width: 25%;
+}
+
+#title-container {
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: 'Outfit', sans-serif;
 }

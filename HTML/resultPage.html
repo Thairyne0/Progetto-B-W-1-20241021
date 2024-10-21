@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RESULTS</title>
     <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../CSS/resultPageStyle.css" />
   </head>
   <body>
@@ -13,8 +19,10 @@
     </header>
 
     <main>
-      <h1>Results</h1>
-      <p>The summary of your answers:</p>
+      <section id="title-container">
+        <h1>Results</h1>
+        <p>The summary of your answers:</p>
+      </section>
 
       <!-- article con percentuali risposte corrette/errate + donut-chart -->
       <article id="chart-and-percentage-container">
@@ -29,9 +37,9 @@
         <section id="chart-container">
           <canvas id="donut-chart"></canvas>
           <div id="chart-text">
-            <h3></h3>
-            <h3></h3>
-            <p></p>
+            <h3 id="congrats"></h3>
+            <h3 id="results-description"></h3>
+            <p id="instructions-after-results"></p>
           </div>
         </section>
 
