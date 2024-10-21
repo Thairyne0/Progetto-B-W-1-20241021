@@ -5,6 +5,7 @@ body {
   background-size: cover;
   padding: 3em 12em;
   color: white;
+  width: auto;
 }
 
 .outfit-font {
@@ -34,18 +35,21 @@ main {
   margin-top: 5em;
 }
 
-#chart-container,
+/* #chart-container,
 #correct-answers-container,
 #wrong-answers-container {
   display: inline-block;
-}
+} */
 
 #chart-and-percentage-container {
   text-align: center;
   margin-top: 5em;
 }
 
-#wrong-answers-container,
+#wrong-answers-container {
+  text-align: right;
+}
+
 #correct-answers-container {
   text-align: left;
 }
@@ -66,4 +70,15 @@ main {
   padding: 0.5em 2.8em;
   border: 2px solid white;
   cursor: pointer;
+}
+
+.chartCentered {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#chart-container {
+  margin: 0 5em;
 }
