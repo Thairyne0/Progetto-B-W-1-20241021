@@ -33,7 +33,7 @@ main div {
 }
 
 main h1 {
-    font-size: 3em;
+    font-size: 60px;
 }
 
 main h1 strong {
@@ -41,17 +41,27 @@ main h1 strong {
 }
 
 main button {
-    border-radius: 40px;
-    border: 10px solid;
-    border-image-slice: 1;
-    border-width: 5px;
-    background-color: #C4008F;
-    border-image-source: linear-gradient(347deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%);
+    font-size: 1.2em;
+    position: relative;
+    border: 3px solid transparent;
     color: white;
     width: 330px;
     height: 70px;
-    background-color: rgba(255, 255, 255, 0.192);
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.164);
+    background-clip: padding-box;
+    padding: 10px;
     margin: 0 20px;
+}
+
+main button::after{
+    position: absolute;
+    top: -3px; bottom: -3px;
+    left: -3px; right: -3px;
+    background: linear-gradient(344deg, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 100%);
+    content: '';
+    z-index: -1;
+    border-radius: 40px;
 }
 
 main #div-next-button {
@@ -81,3 +91,4 @@ footer h3 {
 footer strong {
     color: #C4008F;
 }
+
