@@ -9,10 +9,12 @@ body {
 
 .outfit-font {
   font-family: 'Outfit', sans-serif;
+  font-size: 60px;
 }
 
 .inter-font {
   font-family: 'Outfit', sans-serif;
+  font-size: 30px;
 }
 
 #logo {
@@ -21,4 +23,25 @@ body {
 
 #title-container {
   text-align: center;
+}
+
+#chart-container,
+#correct-answers-container,
+#wrong-answers-container {
+  display: inline-block;
+}
+
+#chart-and-percentage-container {
+  text-align: center;
+}
+
+#rate-us {
+  display: block;
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  color: white;
+  padding: 0.5em 2em;
+  border: 2px solid white;
 }
