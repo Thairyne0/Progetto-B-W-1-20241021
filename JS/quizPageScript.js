@@ -121,6 +121,11 @@ const answerFunction = function (e) {
 let numeroDomande = 10;
 
 document.getElementById("question-number").innerText = numeroDomande;
+//funzione di cambio pagina quando il tasto next diventa il tasto finish
+const funzioneFinish = function () {
+  console.log("sono finish");
+  location.href = "../HTML/resultPage.html";
+};
 
 //funzione che gestisce il popolamento della domanda e delle risposte e il controllo se la risposta selezionata e giusta nel momento del submit
 
@@ -172,6 +177,9 @@ const popolamentoDomande = function () {
   document.getElementById("attuale-question-number").innerText = indice;
   if (indice === questions.length) {
     document.getElementById("next-button").innerText = "Finish";
+    document
+      .getElementById("next-button")
+      .addEventListener("click", funzioneFinish);
   }
 };
 
