@@ -17,6 +17,7 @@
     />
 
     <link rel="stylesheet" href="../CSS/resultPageStyle.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <header>
@@ -32,33 +33,32 @@
       <!-- article con percentuali risposte corrette/errate + donut-chart -->
       <article id="chart-and-percentage-container">
         <!-- section con la percentuale di risposte corrette -->
-        <section id="correct-answers-container">
-          <h2 id="correct-title" class="outfit-font">Correct</h2>
-          <h3 id="correct-percentage" class="outfit-font bold">66.7%</h3>
-          <p id="correct-stats" class="inter-font">4/6 questions</p>
-        </section>
+        <div class="chartCentered">
+          <section id="correct-answers-container">
+            <h2 id="correct-title" class="outfit-font">Correct</h2>
+            <h3 id="correct-percentage" class="outfit-font bold">66.7%</h3>
+            <p id="correct-stats" class="inter-font">4/6 questions</p>
+          </section>
 
-        <!-- section con il grafico di risposte corrette ed errate -->
-        <section id="chart-container">
-          <!-- conterrà il grafico con le percentuali di risposte corrette ed errate -->
-          <canvas id="donut-chart"> </canvas>
-          <div id="chart-text">
-            <h3 id="congrats"></h3>
-            <h3 id="results-description" class="outfit-font"></h3>
-            <p id="instructions-after-results" class="inter-font"></p>
-          </div>
-        </section>
+          <!-- section con il grafico di risposte corrette ed errate -->
+          <section id="chart-container">
+            <!-- conterrà il grafico con le percentuali di risposte corrette ed errate -->
+            <canvas id="myChart" width="400" height="400"> </canvas>
+          </section>
 
-        <!-- section con la percentuale di risposte errate -->
-        <section id="wrong-answers-container">
-          <h2 id="wrong-title" class="outfit-font">Wrong</h2>
-          <h3 id="wrong-percentage" class="outfit-font bold">33.3%</h3>
-          <p id="wrong-stats" class="inter-font">2/6 questions</p>
-        </section>
+          <!-- section con la percentuale di risposte errate -->
+          <section id="wrong-answers-container">
+            <h2 id="wrong-title" class="outfit-font">Wrong</h2>
+            <h3 id="wrong-percentage" class="outfit-font bold">33.3%</h3>
+            <p id="wrong-stats" class="inter-font">2/6 questions</p>
+          </section>
+        </div>
 
         <!-- button per passare alla sezione 'RATE US' -->
         <button id="rate-us" class="inter-font">RATE US</button>
       </article>
     </main>
+
+    <script src="../JS/resultPageScript.js"></script>
   </body>
 </html>

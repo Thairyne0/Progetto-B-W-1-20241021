@@ -22,9 +22,6 @@ h1 {
   padding-bottom: 10px;
 }
 
-#stars {
-}
-
 .star {
   filter: brightness(0) saturate(100%) invert(13%) sepia(67%) saturate(1425%)
     hue-rotate(211deg) brightness(81%) contrast(105%);
@@ -32,9 +29,6 @@ h1 {
 }
 
 .starClick {
-}
-
-#star1 {
 }
 
 #stars div {
@@ -65,8 +59,6 @@ h1 {
   font-size: 16px;
   color: #f0e9f1db;
   outline: none;
-}
-#feedback label {
 }
 
 #info-button {
