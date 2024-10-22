@@ -1,55 +1,52 @@
-body{
-    background-image: url(/ASSET/bg.jpg);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family:"Outfit", sans-serif;
-    
+body {
+  background-image: url('../ASSET/bg.jpg');
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Outfit', sans-serif;
 }
 
-#logo{
-    margin-top: 40px;
-    margin-left: 150px;
-    width: 40px 100px;
+#logo {
+  margin-top: 40px;
+  margin-left: 150px;
+  width: 40px 100px;
 }
 
-h1{
-    margin-top: 70px;
-    font-size: 70px;
-    color: white;
-    margin-left: 150px;
+h1 {
+  margin-top: 70px;
+  font-size: 70px;
+  color: white;
+  margin-left: 150px;
 }
 
-
-h2{
-   font-size: 30px;
-   font-weight: bold;
-   margin-left: 150px;
-   margin-top:30px ;
-   margin-bottom: 10px;
-   color: #d20094 ;
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 150px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #d20094;
 }
 
-p{
-    color: white;
-    margin-left: 150px;
-    font-weight: 300;
-    font-size: 16px;
-    margin-bottom: 40px; 
+p {
+  color: white;
+  margin-left: 150px;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 40px;
 }
 
-ul li{
-    color:white;
-    margin-left: 170px;
-    font-weight: 300;
-    font-size: 16px;
-    list-style-type:disc;
-    line-height: 25px;
+ul li {
+  color: white;
+  margin-left: 170px;
+  font-weight: 300;
+  font-size: 16px;
+  list-style-type: disc;
+  line-height: 25px;
 }
 
-strong{
-    
-    font-weight: bold;
+strong {
+  font-weight: bold;
 }
 
 input[type="checkbox"] {
