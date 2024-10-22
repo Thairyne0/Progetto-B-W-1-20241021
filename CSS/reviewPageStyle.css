@@ -1,9 +1,9 @@
 body {
-  background-image: url('../ASSET/bg.jpg');
+  background-image: url(../ASSET/bg.jpg);
   width: auto;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 body section form {
@@ -22,10 +22,13 @@ h1 {
   padding-bottom: 10px;
 }
 
-#stars img {
+.star {
   filter: brightness(0) saturate(100%) invert(13%) sepia(67%) saturate(1425%)
     hue-rotate(211deg) brightness(81%) contrast(105%);
   cursor: pointer;
+}
+
+.starClick {
 }
 
 #stars div {
@@ -33,6 +36,7 @@ h1 {
   margin-top: 30px;
   margin-left: 10px;
   margin-bottom: 70px;
+  cursor: pointer;
 }
 
 #logo img {
@@ -44,7 +48,7 @@ h1 {
   color: #f0e9f1db;
   font-size: 1.5em;
   padding: 10px 280px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 35px;
 }
 

@@ -1,3 +1,5 @@
+//array di oggetti delle domande
+
 const questions = [
   {
     category: "Science: Computers",
@@ -86,6 +88,8 @@ const questions = [
   },
 ];
 
+//dichiarazione di varie variabili utili per le varie funzioni
+
 let answerButtons = document.getElementsByClassName("risposta");
 
 const arraybuttonsAnswer = Array.from(answerButtons);
@@ -100,6 +104,8 @@ let indiceRis = 0;
 
 let stringa = "";
 
+//funzione che permette di cambiare colore ai tasti delle risposte quando selezioniati
+
 const answerFunction = function (e) {
   for (let i = 0; i < arraybuttonsAnswer.length; i++) {
     arraybuttonsAnswer[i].style.backgroundColor = "rgba(255, 255, 255, 0.164)";
@@ -111,6 +117,17 @@ const answerFunction = function (e) {
   newAnswerButton.style.backgroundColor = "#C4008F";
   stringa = newAnswerButton.textContent;
 };
+
+let numeroDomande = 10;
+
+document.getElementById("question-number").innerText = numeroDomande;
+//funzione di cambio pagina quando il tasto next diventa il tasto finish
+const funzioneFinish = function () {
+  console.log("sono finish");
+  location.href = "../HTML/resultPage.html";
+};
+
+//funzione che gestisce il popolamento della domanda e delle risposte e il controllo se la risposta selezionata e giusta nel momento del submit
 
 const popolamentoDomande = function () {
   for (let i = 0; i < arraybuttonsAnswer.length; i++) {
@@ -157,14 +174,19 @@ const popolamentoDomande = function () {
   }
 
   indice++;
-  document.getElementById("question-number").innerText = indice;
+  document.getElementById("attuale-question-number").innerText = indice;
   if (indice === questions.length) {
     document.getElementById("next-button").innerText = "Finish";
+    document
+      .getElementById("next-button")
+      .addEventListener("click", funzioneFinish);
   }
 };
 
 let nextButton = document.getElementById("next-button");
 nextButton.addEventListener("click", popolamentoDomande);
+
+//hover per il tasto next
 
 const hoverFunction = function (e) {
   button = e.target;
