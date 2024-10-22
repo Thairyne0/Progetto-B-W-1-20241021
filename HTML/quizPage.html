@@ -27,11 +27,19 @@
     </header>
     <main>
       <article>
-        <h1>How can I create a<strong> Strong Placeoholder ?</strong></h1>
+        <h1 id="domanda">
+          How can I create a<strong> Strong Placeoholder ?</strong>
+        </h1>
       </article>
       <form>
-        <div><button>Placeoholder</button> <button>Placeoholder</button></div>
-        <div><button>Placeoholder</button> <button>Placeoholder</button></div>
+        <div>
+          <button id="bottoneUno" class="risposta">Placeoholder</button>
+          <button id="bottoneDue" class="risposta">Placeoholder</button>
+        </div>
+        <div>
+          <button id="bottoneTre" class="risposta">Placeoholder</button>
+          <button id="bottoneQuattro" class="risposta">Placeoholder</button>
+        </div>
       </form>
       <div id="div-next-button">
         <button id="next-button">Next<i class="fas fa-arrow-right"></i></button>
@@ -39,8 +47,12 @@
     </main>
     <footer>
       <div>
-        <h3>Question 1/<strong>10</strong></h3>
+        <h3>
+          Question
+          <span id="question-number"></span>/<strong>10</strong>
+        </h3>
       </div>
     </footer>
+    <script src="../JS/quizPageScript.js"></script>
   </body>
 </html>

@@ -20,32 +20,26 @@
       </div>
     </header>
     <main>
-      <h1>Welcome to <br /><strong>your exam</strong></h1>
-      <h2>Instructions</h2>
-      <p>
-        We don't expect most engineers to know the answers to all of these
-        <br />questions so don't worry if you're unsure of a few of them.
-      </p>
-      <ul>
-        <li>
-          Each question is <strong>timed</strong> and can only be
-          <strong>anwered once</strong>.
-        </li>
-        <li>
-          Changing browser tab or opening other windows will
-          <strong>invalidate the question</strong>.
-        </li>
-        <li>This exam will take approx. <strong>0-5 minutes</strong>.</li>
-      </ul>
-      <div>
-        <input type="checkbox" id="checkbox" name="promise" />
-        <label for="promise"
-          >I promise to anwer myself without help from anyone</label
-        >
-      </div>
-      <div>
-        <button>PROCEED</button>
-      </div>
-    </main>
+    <h1>Welcome to <br><strong>your exam</strong></h1>
+    <h2>Instructions</h2>
+    <p>We don't expect most engineers to know the answers to all of these <br>questions so don't worry if you're unsure of a few of them. </p>
+    <ul>
+      <li>Each question is <strong>timed</strong> and can only be <strong>anwered once</strong>.</li>
+      <li>Changing browser tab or opening other windows will <strong>invalidate the question</strong>.</li>
+      <li>This exam will take approx. <strong>0-5 minutes</strong>.</li>
+    </ul>
+    <form> 
+      <label class="custom-checkbox">
+        <input type="checkbox" id="checkbox"/>
+        <span class="checkmark"></span>
+        <span class="label-text">I promise to answer myself without help from anyone</span>
+      </label>
+    </form>
+    <div>
+      <button>PROCEED</button>
+    </div>
+
+    <script href="/JS/welcomePageScript.js"></script>
+  </main>  
   </body>
 </html>
