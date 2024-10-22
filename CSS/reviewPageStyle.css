@@ -25,10 +25,13 @@ h1 {
 #stars {
 }
 
-#stars img {
+.star {
   filter: brightness(0) saturate(100%) invert(13%) sepia(67%) saturate(1425%)
     hue-rotate(211deg) brightness(81%) contrast(105%);
   cursor: pointer;
+}
+
+.starClick {
 }
 
 #star1 {
@@ -39,6 +42,7 @@ h1 {
   margin-top: 30px;
   margin-left: 10px;
   margin-bottom: 70px;
+  cursor: pointer;
 }
 
 #logo img {
