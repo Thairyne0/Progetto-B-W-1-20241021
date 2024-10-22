@@ -4,11 +4,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Outfit', sans-serif;
+  margin-bottom: 50px;
 }
 
 #logo {
   margin-top: 40px;
-  margin-left: 150px;
+  margin-left: 120px;
   width: 40px 100px;
 }
 
@@ -16,13 +17,13 @@ h1 {
   margin-top: 70px;
   font-size: 70px;
   color: white;
-  margin-left: 150px;
+  margin-left: 120px;
 }
 
 h2 {
   font-size: 30px;
   font-weight: bold;
-  margin-left: 150px;
+  margin-left: 120px;
   margin-top: 30px;
   margin-bottom: 10px;
   color: #d20094;
@@ -30,7 +31,7 @@ h2 {
 
 p {
   color: white;
-  margin-left: 150px;
+  margin-left: 120px;
   font-weight: 300;
   font-size: 16px;
   margin-bottom: 40px;
@@ -38,7 +39,7 @@ p {
 
 ul li {
   color: white;
-  margin-left: 170px;
+  margin-left: 140px;
   font-weight: 300;
   font-size: 16px;
   list-style-type: disc;
@@ -106,21 +107,111 @@ input[type="checkbox"]:checked + .checkmark:after {
 
 form{
     margin-top: 100px; 
-    margin-left: 150px; 
+    margin-left: 120px; 
     display: inline-block;
 }
+
+/*dropdown menu per la scelta della difficoltà*/ 
+.drop-button {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #000027;
+  padding: 17px 30px;
+  border-radius:5em;
+  border: #00ffff;
+  box-shadow: 0px 0px 20px 6px rgba(0, 255, 255, 0.65);
+  background: #00ffff;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+.drop-button:checked + .dropdown-content::after{
+  display: block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: transparent;
+min-width: 200px;
+margin-left: 50px;
+z-index: 1;
+}
+
+.dropdown-content a {
+color: #000027;
+border-radius: 5em;
+padding: 12px 16px;
+background-color: #00ffff;
+box-shadow: 0px 0px 20px 6px rgba(0, 255, 255, 0.65);
+text-decoration: none;
+text-align: center;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: #00eeff71;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/* dropdown menu per scegliere la quantità di domande*/
+.drop-button2 {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #000027;
+  padding: 17px 30px;
+  border-radius:5em;
+  border: #00ffff;
+  box-shadow: 0px 0px 20px 6px rgba(0, 255, 255, 0.65);
+  background: #00ffff;
+}
+
+.dropdown2 {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color:transparent ;
+  min-width: 250px;
+  margin-left: 50px;
+  z-index: 1;
+}
+
+.dropdown-content2 a {
+  border-radius: 5em;
+  color: #000027;
+  padding: 12px 16px;
+  box-shadow: 0px 0px 20px 6px rgba(0, 255, 255, 0.65);
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  background-color: #00ffff;
+}
+
+.dropdown-content2 a:hover {background-color: #00eeff71;}
+
+.dropdown2:hover .dropdown-content2 {display: block;}
 
 /*button*/
 div{
     display: inline-block;
+    margin-bottom: 50px;
 }
-button{
-    margin-left: 600px ;
+.proceed-button{
+    margin-left: 135px ;
     font-size: 1.25em;
     font-weight: bold;
     color: #000030;
-    padding: 17px 50px;
+    padding: 17px 30px;
     border: #00ffff;
     box-shadow: 0px 0px 20px 6px rgba(0, 255, 255, 0.65);
     background: #00ffff;
+    margin-bottom: 50px;
 }
