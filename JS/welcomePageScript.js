@@ -40,14 +40,20 @@ const difficultyDropDownThree =
 
 difficultyDropDownOne.addEventListener("click", function () {
   difficultyButton.textContent = difficultyDropDownOne.textContent;
+  difficoltaDomande = difficultyDropDownOne.textContent;
+  console.log(difficoltaDomande);
 });
 
 difficultyDropDownTwo.addEventListener("click", function () {
   difficultyButton.textContent = difficultyDropDownTwo.textContent;
+  difficoltaDomande = difficultyDropDownTwo.textContent;
+  console.log(difficoltaDomande);
 });
 
 difficultyDropDownThree.addEventListener("click", function () {
   difficultyButton.textContent = difficultyDropDownThree.textContent;
+  difficoltaDomande = difficultyDropDownThree.textContent;
+  console.log(difficoltaDomande);
 });
 
 const numberQuestioOne = document.getElementsByClassName(
@@ -62,10 +68,16 @@ const numberQuestioThree = document.getElementsByClassName(
 
 numberQuestioOne.addEventListener("click", function () {
   questionNumberButton.textContent = numberQuestioOne.textContent;
+  numeroDomande = parseInt(numberQuestioOne.textContent);
+  console.log(numeroDomande);
 });
 numberQuestioTwo.addEventListener("click", function () {
   questionNumberButton.textContent = numberQuestioTwo.textContent;
+  numeroDomande = parseInt(numberQuestioTwo.textContent);
+  console.log(numeroDomande);
 });
 numberQuestioThree.addEventListener("click", function () {
   questionNumberButton.textContent = numberQuestioThree.textContent;
+  numeroDomande = parseInt(numberQuestioThree.textContent);
+  console.log(numeroDomande);
 });
