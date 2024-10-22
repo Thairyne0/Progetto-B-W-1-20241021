@@ -2,8 +2,12 @@
 let correctAnswers = 8
 let wrongAnswers = 3
 let questionNumbers = correctAnswers + wrongAnswers
+
+//percentuali delle risposte
 let correctPercentage = (correctAnswers / questionNumbers) * 100
 let wrongPercentage = (wrongAnswers / questionNumbers) * 100
+
+//percenutali arrotondate a sole due cifre decimali
 let roundedCorrectPercentage = correctPercentage.toFixed(2)
 let roundedWrongPercentage = wrongPercentage.toFixed(2)
 
@@ -40,7 +44,7 @@ const text4 = correctPercentage >= 60 ? `in few minutes.` : ``
 const text5 = correctPercentage >= 60 ? `Check your email(including` : ``
 const text6 = correctPercentage >= 60 ? `promotions/spam folder)` : ``
 
-//riferimento al tag canvas tramite il suo ID
+//riferimento al tag canvas tramite il suo ID e selezioine del contesto in cui verrà disegnato il grafico
 let ctx = document.getElementById('myChart').getContext('2d')
 
 const centerTextPlugin = {
@@ -60,7 +64,7 @@ const centerTextPlugin = {
     ctx.fillStyle = '#fff' // Colore del testo
 
     // Inserisci il testo che vuoi al centro
-    ctx.fillText(text1, centerX, centerY - 80)
+    ctx.fillText(text1, centerX, centerY - 80) // -80 sposta il testo verso l'alto rispetto al centro del 'buco' del grafico
 
     //seconda riga di testo
     ctx.fillStyle = '#00FFFF'
@@ -69,12 +73,12 @@ const centerTextPlugin = {
     //terza riga di testo
     ctx.fillStyle = '#FFFFFF'
     ctx.font = 'normal 14px Inter'
-    ctx.fillText(text3, centerX, centerY)
+    ctx.fillText(text3, centerX, centerY) // questo dovrebbe essre esattamente al centro del 'buco' del grafico
 
     //quarta riga di testo
     ctx.fillStyle = '#FFFFFF'
     ctx.font = 'normal 14px Inter'
-    ctx.fillText(text4, centerX, centerY + 20)
+    ctx.fillText(text4, centerX, centerY + 20) // +20 sposta il testo verso il basso rispetto al centro del 'buco' del grafico
 
     //quinta riga di testo
     ctx.fillStyle = '#FFFFFF'
@@ -111,16 +115,15 @@ let myDoughnutChart = new Chart(ctx, {
     ],
   },
   options: {
-    events: ['mousemove'],
-    responsive: true,
+    responsive: true, // dimensioni del grafico si adattano a quelle del contenitore
     maintainAspectRatio: false,
-    cutout: '70%',
+    cutout: '70%', // cambia il raggio del 'buco' del grafico. In questo modo posso restringere lo spessore delle sezioni ceh mi indicano le percentuali delle risposte corrette e sbagliate
     plugins: {
       legend: {
-        display: false,
+        display: false, // toglie la legenda dei colori posizioinata di default in cima al doughnut chart
       },
       tooltip: {
-        enabled: true,
+        enabled: true, // passando il mouse sulle sezioni del grafico apre un popup con informazioni sulle percentuali di risposte
       },
     },
   },
