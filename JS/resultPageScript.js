@@ -1,6 +1,6 @@
 let correctAnswers = 19
 let wrongAnswers = 2
-let totalAnswers = correctAnswers + wrongAnswers
+let questionNumbers = correctAnswers + wrongAnswers
 let correctPercentage = (correctAnswers / totalAnswers) * 100
 
 const text1 = correctPercentage >= 60 ? 'Congratulations!' : 'Sorry!'
