@@ -18,13 +18,13 @@ header img {
 }
 
 main {
-    margin: 50px 0;
+    margin-bottom: 50px;
     text-align: center;
 }
 
 main article {
     margin: 0 auto;
-    width: 35%;
+    width: 45%;
     /* padding: 0 400px; */
     margin-bottom: 70px;
 }
@@ -58,7 +58,7 @@ main button::after{
     position: absolute;
     top: -3px; bottom: -3px;
     left: -3px; right: -3px;
-    background: linear-gradient(344deg, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(344deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.5) 100%);
     content: '';
     z-index: -1;
     border-radius: 40px;

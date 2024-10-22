@@ -157,14 +157,14 @@ const popolamentoDomande = function () {
   }
 
   indice++;
+  document.getElementById("question-number").innerText = indice;
+  if (indice === questions.length) {
+    document.getElementById("next-button").innerText = "Finish";
+  }
 };
 
 let nextButton = document.getElementById("next-button");
 nextButton.addEventListener("click", popolamentoDomande);
-
-for (let i = 0; i < arraybuttonsAnswer.length; i++) {
-  arraybuttonsAnswer[i].addEventListener("click", answerFunction);
-}
 
 const hoverFunction = function (e) {
   button = e.target;
@@ -175,6 +175,21 @@ const outFunction = function (e) {
   button = e.target;
   button.style.backgroundColor = "#0C113B";
 };
+
+// const outFunctionBig = function (e) {
+//   if (button.style.backgroundColor === "#C4008F") {
+//     button.style.backgroundColor = "#C4008F";
+//   } else {
+//     button = e.target;
+//     button.style.backgroundColor = "rgba(255, 255, 255, 0.164)";
+//   }
+// };
+
+for (let i = 0; i < arraybuttonsAnswer.length; i++) {
+  arraybuttonsAnswer[i].addEventListener("click", answerFunction);
+  //   arraybuttonsAnswer[i].addEventListener("mouseover", hoverFunction);
+  //   arraybuttonsAnswer[i].addEventListener("mouseout", outFunctionBig);
+}
 
 nextButton.addEventListener("mouseover", hoverFunction);
 //non c'é assolutamente nessun bug qui TRANQUILLO
