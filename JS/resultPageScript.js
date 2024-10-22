@@ -60,7 +60,7 @@ const centerTextPlugin = {
     ctx.fillStyle = '#fff' // Colore del testo
 
     // Inserisci il testo che vuoi al centro
-    ctx.fillText(text1, centerX, centerY - 80)
+    ctx.fillText(text1, centerX, centerY - 80) // -80 sposta il testo verso l'alto rispetto al centro del 'buco' del grafico
 
     //seconda riga di testo
     ctx.fillStyle = '#00FFFF'
@@ -69,12 +69,12 @@ const centerTextPlugin = {
     //terza riga di testo
     ctx.fillStyle = '#FFFFFF'
     ctx.font = 'normal 14px Inter'
-    ctx.fillText(text3, centerX, centerY)
+    ctx.fillText(text3, centerX, centerY) // questo dovrebbe essre esattamente al centro del 'buco' del grafico
 
     //quarta riga di testo
     ctx.fillStyle = '#FFFFFF'
     ctx.font = 'normal 14px Inter'
-    ctx.fillText(text4, centerX, centerY + 20)
+    ctx.fillText(text4, centerX, centerY + 20) // +20 sposta il testo verso il basso rispetto al centro del 'buco' del grafico
 
     //quinta riga di testo
     ctx.fillStyle = '#FFFFFF'
@@ -111,7 +111,6 @@ let myDoughnutChart = new Chart(ctx, {
     ],
   },
   options: {
-    events: ['mousemove'],
     responsive: true,
     maintainAspectRatio: false,
     cutout: '70%',
