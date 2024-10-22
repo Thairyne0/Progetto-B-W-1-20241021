@@ -1,7 +1,36 @@
-let correctAnswers = 19
-let wrongAnswers = 2
+//variabili con il numero di risposte corrette ed errate
+let correctAnswers = 6
+let wrongAnswers = 4
 let questionNumbers = correctAnswers + wrongAnswers
-let correctPercentage = (correctAnswers / totalAnswers) * 100
+let correctPercentage = (correctAnswers / questionNumbers) * 100
+let wrongPercentage = (wrongAnswers / questionNumbers) * 100
+let roundedCorrectPercentage = correctPercentage.toFixed(0)
+let roundedWrongPercentage = wrongPercentage.toFixed(0)
+
+//riferimento per il button del doc HTML
+const rateUs = document.getElementById('rate-us')
+
+//riferimento per h3 con la percentuale di risposte corrette
+const corrAnsPerc = document.getElementById('correct-percentage')
+corrAnsPerc.innerHTML = `
+  <h3>${roundedCorrectPercentage}</h3>
+`
+//riferimento per h3 con la percentuale di risposte errate
+const wrongAnsPerc = document.getElementById('wrong-percentage')
+wrongAnsPerc.innerHTML = `
+  <h3>${roundedWrongPercentage}</h3>
+`
+
+//riferimenti per <p></p> con il numero di risposte corrette ed errate rispetto al totale
+const numCorrectAns = document.getElementById('correct-stats')
+const numWrongAns = document.getElementById('wrong-stats')
+
+numCorrectAns.innerHTML = `
+  <p>${correctAnswers}/${questionNumbers} questions</p>
+`
+numWrongAns.innerHTML = `
+  <p>${wrongAnswers}/${questionNumbers} questions</p>
+`
 
 const text1 = correctPercentage >= 60 ? 'Congratulations!' : 'Sorry!'
 const text2 = correctPercentage >= 60 ? 'Exam passed' : 'Try later!'
@@ -47,8 +76,8 @@ let myDoughnutChart = new Chart(ctx, {
       {
         label: 'Quiz Results',
         data: [
-          (wrongAnswers / totalAnswers) * 100,
-          (correctAnswers / totalAnswers) * 100,
+          (wrongAnswers / questionNumbers) * 100,
+          (correctAnswers / questionNumbers) * 100,
         ],
         backgroundColor: ['#C2128D', '#00FFFF'],
         borderWidth: 0,
@@ -56,6 +85,7 @@ let myDoughnutChart = new Chart(ctx, {
     ],
   },
   options: {
+    events: ['mousemove'],
     responsive: true,
     maintainAspectRatio: false,
     cutout: '70%',
@@ -68,4 +98,22 @@ let myDoughnutChart = new Chart(ctx, {
       },
     },
   },
+})
+
+// //effetti sul button 'RATE US'
+
+rateUs.addEventListener('mouseenter', function () {
+  rateUs.style.cursor = 'pointer'
+  rateUs.style.backgroundColor = '#00FFFF'
+  rateUs.style.border = 'none'
+  rateUs.style.color = 'black'
+  rateUs.style.boxShadow = '0px 0px 30px 20px rgba(0,255,255,0.58)'
+})
+
+rateUs.addEventListener('mouseleave', function () {
+  rateUs.style.cursor = 'none'
+  rateUs.style.backgroundColor = 'transparent'
+  rateUs.style.border = '2px solid white'
+  rateUs.style.color = 'white'
+  rateUs.style.boxShadow = 'none'
 })

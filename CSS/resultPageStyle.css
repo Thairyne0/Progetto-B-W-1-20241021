@@ -35,12 +35,6 @@ main {
   margin-top: 2em;
 }
 
-/* #chart-container,
-#correct-answers-container,
-#wrong-answers-container {
-  display: inline-block;
-} */
-
 #chart-and-percentage-container {
   text-align: center;
   margin-top: 2em;
@@ -57,6 +51,7 @@ main {
 #wrong-stats,
 #correct-stats {
   font-size: 20px;
+  margin-top: 0.3em;
 }
 
 #rate-us {
@@ -69,7 +64,7 @@ main {
   color: white;
   padding: 0.5em 2.8em;
   border: 2px solid white;
-  cursor: pointer;
+  transition: transform 0.5s ease;
 }
 
 .chartCentered {
