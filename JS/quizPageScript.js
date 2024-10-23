@@ -1052,18 +1052,21 @@ let stringa = "";
 
 let boolean = false;
 
+let j = 0;
+
+let p = 0;
+
 //funzione che permette di cambiare colore ai tasti delle risposte quando selezioniati
 
 const answerFunction = function (e) {
   for (let i = 0; i < arraybuttonsAnswer.length; i++) {
     arraybuttonsAnswer[i].style.backgroundColor = "rgba(255, 255, 255, 0.164)";
   }
-  console.log(e.target);
+  // console.log(e.target);
   e.preventDefault();
-  console.log("ciao");
   let newAnswerButton = e.target;
   newAnswerButton.style.backgroundColor = "#C4008F";
-  stringa = newAnswerButton.textContent;
+  localStorage.setItem("rispostaEsatta", newAnswerButton.textContent);
 };
 
 let numeroDomande = localStorage.getItem("numeroDomande");
@@ -1078,6 +1081,27 @@ const funzioneFinish = function () {
 //funzione che gestisce il popolamento della domanda e delle risposte e il controllo se la risposta selezionata e giusta nel momento del submit
 
 const popolamentoDomande = function () {
+  console.log(p);
+  console.log(stringa + "ciao");
+  console.log(questions[p].correct_answer);
+  console.log(localStorage.getItem("rispostaEsatta"));
+  if (questions[p].correct_answer === localStorage.getItem("rispostaEsatta")) {
+    console.log("corretta");
+    punteggioUtente++;
+    console.log(punteggioUtente);
+    localStorage.setItem("numeroRisposteCorrette", punteggioUtente);
+    indiceRis++;
+  } else if (questions[p].incorrect_answers[0] === stringa) {
+    console.log("sbagliata");
+    indiceRis++;
+  } else if (questions[p].incorrect_answers[1] === stringa) {
+    console.log("sbagliata");
+    indiceRis++;
+  } else if (questions[p].incorrect_answers[2] === stringa) {
+    console.log("sbagliata");
+    indiceRis++;
+  }
+
   for (let i = 0; i < arraybuttonsAnswer.length; i++) {
     arraybuttonsAnswer[i].style.backgroundColor = "rgba(255, 255, 255, 0.164)";
   }
@@ -1095,43 +1119,32 @@ const popolamentoDomande = function () {
   //     arrayRisposte[i].innerText = questions[indice].answer[i];
   //   }
   // }
-  console.log(questions[indice].difficulty);
-  console.log(difficolta);
-  console.log(difficolta.localeCompare(questions[indice].difficulty));
-
+  // console.log(questions.length);
+  // console.log(questions[84].difficulty);
+  // console.log(difficolta);
+  // console.log(difficolta.localeCompare(questions[84].difficulty));
+  console.log(stringa);
   while (!boolean) {
-    if (questions[indice].difficulty === difficolta) {
+    if (questions[j].difficulty === difficolta) {
+      console.log(j);
       console.log("entrato");
-      document.getElementById("domanda").innerText = questions[indice].question;
+      document.getElementById("domanda").innerText = questions[j].question;
       let risposte = document.getElementsByClassName("risposta");
 
       const arrayRisposte = Array.from(risposte);
 
       for (let i = 0; i < arrayRisposte.length; i++) {
-        arrayRisposte[i].innerText = questions[indice].answer[i];
+        arrayRisposte[i].innerText = questions[j].answer[i];
       }
       boolean = true;
+      p = j;
+      j++;
+    } else {
+      p = j;
+      j++;
     }
   }
   boolean = false;
-
-  console.log(stringa);
-  console.log(questions[indiceRis].correct_answer);
-  if (questions[indiceRis].correct_answer === stringa) {
-    console.log("corretta");
-    punteggioUtente++;
-    localStorage.setItem("numeroRisposteCorrette", punteggioUtente);
-    indiceRis++;
-  } else if (questions[indiceRis].incorrect_answers[0] === stringa) {
-    console.log("sbagliata");
-    indiceRis++;
-  } else if (questions[indiceRis].incorrect_answers[1] === stringa) {
-    console.log("sbagliata");
-    indiceRis++;
-  } else if (questions[indiceRis].incorrect_answers[2] === stringa) {
-    console.log("sbagliata");
-    indiceRis++;
-  }
 
   indice++;
   document.getElementById("attuale-question-number").innerText = indice;
