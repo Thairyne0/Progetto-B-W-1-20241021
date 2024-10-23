@@ -14,3 +14,15 @@ stelleArray.forEach(function (star, index) {
     }
   });
 });
+
+document.getElementById("quiz-button").addEventListener("click", function (e) {
+  e.preventDefault();
+  location.href = "../HTML/welcomePage.html";
+});
+
+document.getElementById("info-button").addEventListener("click", function (e) {
+  e.preventDefault();
+  console.log("Informazioni");
+  location.href =
+    "https://gattissimi.com/wp-content/uploads/2016/10/2d2a041ccf81c1ea9ffd255c70a4f024.jpg";
+});

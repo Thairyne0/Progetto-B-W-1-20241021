@@ -60,12 +60,12 @@ h1 {
   color: #f0e9f1db;
   outline: none;
 }
-
-#info-button {
+/* 
+#quiz-button {
   color: #00ffff;
-}
+} */
 
-#info-button button {
+#quiz-button {
   font-size: 1em;
   font-weight: bold;
   padding: 15px 35px;
@@ -75,6 +75,18 @@ h1 {
   background: #00ffff;
   cursor: pointer;
 }
+
+#info-button {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 15px 35px;
+  border: #00ffff;
+  margin: 2em;
+  box-shadow: 0px 0px 20px 6px rgba(0, 255, 255, 0.65);
+  background: #00ffff;
+  cursor: pointer;
+}
+
 body#tinymce {
   background: #610064;
 }

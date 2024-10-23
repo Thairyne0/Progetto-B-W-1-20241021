@@ -113,6 +113,8 @@ form{
 
 /*dropdown menu per la scelta della difficoltà*/ 
 .drop-button {
+  width: 300px;
+  text-align: center;
   display: inline-block;
   margin-left: 20px;
   font-size: 0.9em;
@@ -162,6 +164,7 @@ margin:3px;
 
 /* dropdown menu per scegliere la quantità di domande*/
 .drop-button2 {
+  width: 400px;
   display: inline-block;
   margin-left: 10px;
   font-size:0.9em;
