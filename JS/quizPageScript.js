@@ -1062,7 +1062,7 @@ const centerTextPlugin = {
 
     // Disegna il testo senza cancellare il grafico
     ctx.fillStyle = '#FFFFFF'
-    ctx.font = 'bold 30px Arial'
+    ctx.font = 'bold 40px Arial'
     ctx.fillText(text, textX, textY)
 
     //testo before seconds
@@ -1112,18 +1112,6 @@ const chart = new Chart(ctx, {
 })
 
 // Aggiorna il timer ogni secondo
-const interval = setInterval(() => {
-  timeLeft--
-
-  // Aggiorna i dati del grafico
-  chart.data.datasets[0].data = [totalTime - timeLeft, timeLeft]
-  chart.update()
-
-  // Ferma il timer quando il tempo raggiunge 0
-  if (timeLeft <= 0) {
-    clearInterval(interval)
-  }
-}, 1000)
 
 //dichiarazione di varie variabili utili per le varie funzioni
 let difficolta = localStorage.getItem('difficoltaDomande')
@@ -1243,6 +1231,19 @@ const popolamentoDomande = function () {
     }
   }
   boolean = false
+
+  const interval = setInterval(() => {
+    timeLeft--
+
+    // Aggiorna i dati del grafico
+    chart.data.datasets[0].data = [totalTime - timeLeft, timeLeft]
+    chart.update()
+
+    // Ferma il timer quando il tempo raggiunge 0
+    if (timeLeft <= 0) {
+      clearInterval(interval)
+    }
+  }, 1000)
 
   indice++
   document.getElementById('attuale-question-number').innerText = indice
