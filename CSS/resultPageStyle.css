@@ -3,9 +3,8 @@ body {
   box-sizing: border-box;
   background-image: url('../ASSET/bg.jpg');
   background-size: cover;
-  padding: 3em 12em;
-  color: white;
-  width: auto;
+  color: #e7e7eb;
+  width: 100%;
 }
 
 .outfit-font {
@@ -23,8 +22,8 @@ body {
 }
 
 #logo {
-  width: 15%;
-  cursor: pointer;
+  width: 130px;
+  padding: 40px 100px;
 }
 
 #title-container {
@@ -54,17 +53,35 @@ main {
   margin-top: 0.3em;
 }
 
+
 #rate-us {
   display: block;
-  font-weight: 600;
-  margin-top: 2em;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #000030;
+  cursor:pointer;
+  padding: 17px 30px;
+  border: none; 
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  background-color: transparent;
-  color: white;
-  padding: 0.5em 2.8em;
-  border: 2px solid white;
-  transition: transform 0.5s ease;
+  background-size: 300% 100%;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #8eb2e9);
+  box-shadow: 0 4px 15px 0 rgba(71, 138, 239, 0.75);
+}
+
+#rate-us:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+#rate-us:focus {
+  outline: none;
 }
 
 .chartCentered {

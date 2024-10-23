@@ -1,6 +1,6 @@
 body {
   background-image: url(../ASSET/bg.jpg);
-  width: auto;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Outfit", sans-serif;
@@ -66,25 +66,59 @@ h1 {
 } */
 
 #quiz-button {
-  font-size: 1em;
-  font-weight: bold;
-  padding: 15px 35px;
-  border: #00ffff;
-  margin: 2em;
-  box-shadow: 0px 0px 20px 6px rgba(0, 255, 255, 0.65);
-  background: #00ffff;
-  cursor: pointer;
+  font-size: 1.25em;
+    font-weight: bold;
+    color: #000030;
+    cursor:pointer;
+    padding: 17px 12px;
+    border: none; 
+    margin-bottom: 50px;
+    margin-left: 20px;
+    background-size: 300% 100%;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #8eb2e9);
+    box-shadow: 0 4px 15px 0 rgba(71, 138, 239, 0.75);
+  }
+
+#quiz-button:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
+#quiz-button:focus {
+  outline: none;
+}
+
+
 #info-button {
-  font-size: 1em;
-  font-weight: bold;
-  padding: 15px 35px;
-  border: #00ffff;
-  margin: 2em;
-  box-shadow: 0px 0px 20px 6px rgba(0, 255, 255, 0.65);
-  background: #00ffff;
-  cursor: pointer;
+  font-size: 1.25em;
+    font-weight: bold;
+    color: #000030;
+    cursor:pointer;
+    padding: 17px 30px;
+    border: none; 
+    margin-bottom: 50px;
+    background-size: 300% 100%;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #8eb2e9);
+    box-shadow: 0 4px 15px 0 rgba(71, 138, 239, 0.75);
+  }
+
+#info-button:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+#info-button:focus {
+  outline: none;
 }
 
 body#tinymce {
