@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="../CSS/reset.css" />
     <link rel="stylesheet" href="../CSS/quizPageStyle.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Epicode - Quiz</title>
   </head>
   <body>
@@ -19,6 +20,9 @@
       <img src="../ASSET/epicode_logo.png" alt="Logo di Epicode" />
     </header>
     <main>
+      <div id="timer-container">
+        <canvas id="timer" width="50" height="50"></canvas>
+      </div>
       <article>
         <h1 id="domanda">
           How can I create a<strong> Strong Placeoholder ?</strong>
