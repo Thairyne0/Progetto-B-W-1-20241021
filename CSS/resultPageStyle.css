@@ -3,8 +3,23 @@ body {
   box-sizing: border-box;
   background-image: url('../ASSET/bg.jpg');
   background-size: cover;
-  color: #e7e7eb;
   width: 100%;
+}
+
+h1 {
+  color: #e7e7eb;
+}
+
+h2 {
+  color: #e7e7eb;
+}
+
+h3 {
+  color: #e7e7eb;
+}
+
+p {
+  color: #e7e7eb;
 }
 
 .outfit-font {
@@ -55,16 +70,17 @@ main {
 
 
 #rate-us {
-  display: block;
+  text-align: center;
   font-size: 1.25em;
+  font-family: 'Outfit', sans-serif;
   font-weight: bold;
   color: #000030;
   cursor:pointer;
   padding: 17px 30px;
   border: none; 
   margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 25%;
+  margin-right: 25%;
   background-size: 300% 100%;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
@@ -74,6 +90,7 @@ main {
 }
 
 #rate-us:hover {
+  color: #000030;
   background-position: 100% 0;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;

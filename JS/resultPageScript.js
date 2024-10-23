@@ -132,21 +132,21 @@ let myDoughnutChart = new Chart(ctx, {
 
 // //effetti sul button 'RATE US'
 
-rateUs.addEventListener("mouseenter", function () {
-  rateUs.style.cursor = "pointer";
-  rateUs.style.backgroundColor = "#00FFFF";
-  rateUs.style.border = "none";
-  rateUs.style.color = "black";
-  rateUs.style.boxShadow = "0px 0px 30px 20px rgba(0,255,255,0.58)";
-});
+// rateUs.addEventListener("mouseenter", function () {
+//   rateUs.style.cursor = "pointer";
+//   rateUs.style.backgroundColor = "#00FFFF";
+//   rateUs.style.border = "none";
+//   rateUs.style.color = "black";
+//   rateUs.style.boxShadow = "0px 0px 30px 20px rgba(0,255,255,0.58)";
+// });
 
-rateUs.addEventListener("mouseleave", function () {
-  rateUs.style.cursor = "none";
-  rateUs.style.backgroundColor = "transparent";
-  rateUs.style.border = "2px solid white";
-  rateUs.style.color = "white";
-  rateUs.style.boxShadow = "none";
-});
+// rateUs.addEventListener("mouseleave", function () {
+//   rateUs.style.cursor = "none";
+//   rateUs.style.backgroundColor = "transparent";
+//   rateUs.style.border = "2px solid white";
+//   rateUs.style.color = "white";
+//   rateUs.style.boxShadow = "none";
+// });
 
 rateUs.addEventListener("click", function () {
   location.href = "../HTML/reviewPage.html";
