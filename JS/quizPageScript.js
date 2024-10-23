@@ -4,7 +4,7 @@ const questions = [
   {
     category: "Science: Computers",
     type: "multiple",
-    difficulty: "easy",
+    difficulty: "Easy",
     question: "What does CPU stand for?",
     correct_answer: "Central Processing Unit",
     incorrect_answers: [
@@ -22,7 +22,7 @@ const questions = [
   {
     category: "Science: Computers",
     type: "multiple",
-    difficulty: "easy",
+    difficulty: "Easy",
     question:
       "In the programming language Java, which of these keywords would you put on a variable to make sure it doesn't get modified?",
     correct_answer: "Final",
@@ -32,7 +32,7 @@ const questions = [
   {
     category: "Science: Computers",
     type: "multiple",
-    difficulty: "easy",
+    difficulty: "Easy",
     question:
       "What is the most preferred image format used for logos in the Wikimedia database?",
     correct_answer: ".svg",
@@ -42,7 +42,7 @@ const questions = [
   {
     category: "Science: Computers",
     type: "multiple",
-    difficulty: "easy",
+    difficulty: "Easy",
     question: "In web design, what does CSS stand for?",
     correct_answer: "Cascading Style Sheet",
     incorrect_answers: [
@@ -60,7 +60,7 @@ const questions = [
   {
     category: "Science: Computers",
     type: "multiple",
-    difficulty: "easy",
+    difficulty: "Easy",
     question:
       "What is the code name for the mobile operating system Android 7.0?",
     correct_answer: "Nougat",
@@ -70,7 +70,7 @@ const questions = [
   {
     category: "Science: Computers",
     type: "multiple",
-    difficulty: "easy",
+    difficulty: "Easy",
     question: "On Twitter, what is the character limit for a Tweet?",
     correct_answer: "140",
     incorrect_answers: ["120", "160", "100"],
@@ -79,7 +79,7 @@ const questions = [
   {
     category: "Science: Computers",
     type: "multiple",
-    difficulty: "easy",
+    difficulty: "Easy",
     question:
       "Which programming language shares its name with an island in Indonesia?",
     correct_answer: "Java",
@@ -89,6 +89,7 @@ const questions = [
 ];
 
 //dichiarazione di varie variabili utili per le varie funzioni
+let difficolta = localStorage.getItem("difficoltaDomande");
 
 let answerButtons = document.getElementsByClassName("risposta");
 
@@ -104,6 +105,8 @@ let indiceRis = 0;
 
 let stringa = "";
 
+let boolean = false;
+
 //funzione che permette di cambiare colore ai tasti delle risposte quando selezioniati
 
 const answerFunction = function (e) {
@@ -118,7 +121,7 @@ const answerFunction = function (e) {
   stringa = newAnswerButton.textContent;
 };
 
-let numeroDomande = 10;
+let numeroDomande = localStorage.getItem("numeroDomande");
 
 document.getElementById("question-number").innerText = numeroDomande;
 //funzione di cambio pagina quando il tasto next diventa il tasto finish
@@ -133,27 +136,37 @@ const popolamentoDomande = function () {
   for (let i = 0; i < arraybuttonsAnswer.length; i++) {
     arraybuttonsAnswer[i].style.backgroundColor = "rgba(255, 255, 255, 0.164)";
   }
+  console.log(localStorage.getItem("difficoltaDomande"));
 
-  //   const arrayDomandeAlreadyUscite = [0, 1, 2, 3, 4, 5, 6];
-  //   randomNumber = Math.floor(Math.random() * 7);
-  //   console.log(randomNumber);
+  // if (
+  //   questions[indice].difficulty === localStorage.getItem("difficoltaDomande")
+  // ) {
+  //   document.getElementById("domanda").innerText = questions[indice].question;
+  //   let risposte = document.getElementsByClassName("risposta");
 
-  //   for (let i = 0; i < arrayDomandeAlreadyUscite.length; i++) {
-  //     if (arrayDomandeAlreadyUscite[i] === randomNumber) {
-  //       randomNumber = Math.floor(Math.random() * 7);
-  //     } else {
-  //       arrayDomandeAlreadyUscite.slice(i, 1);
-  //       break;
-  //     }
+  //   const arrayRisposte = Array.from(risposte);
+
+  //   for (let i = 0; i < arrayRisposte.length; i++) {
+  //     arrayRisposte[i].innerText = questions[indice].answer[i];
   //   }
+  // }
+  console.log(questions[indice].difficulty);
+  console.log(difficolta);
+  console.log(difficolta.localeCompare(questions[indice].difficulty));
+  boolean = false;
+  while (!boolean) {
+    if (questions[indice].difficulty === difficolta) {
+      console.log("entrato");
+      document.getElementById("domanda").innerText = questions[indice].question;
+      let risposte = document.getElementsByClassName("risposta");
 
-  document.getElementById("domanda").innerText = questions[indice].question;
-  let risposte = document.getElementsByClassName("risposta");
+      const arrayRisposte = Array.from(risposte);
 
-  const arrayRisposte = Array.from(risposte);
-
-  for (let i = 0; i < arrayRisposte.length; i++) {
-    arrayRisposte[i].innerText = questions[indice].answer[i];
+      for (let i = 0; i < arrayRisposte.length; i++) {
+        arrayRisposte[i].innerText = questions[indice].answer[i];
+      }
+      boolean = true;
+    }
   }
 
   console.log(stringa);
@@ -161,6 +174,7 @@ const popolamentoDomande = function () {
   if (questions[indiceRis].correct_answer === stringa) {
     console.log("corretta");
     punteggioUtente++;
+    localStorage.setItem("numeroRisposteCorrette", punteggioUtente);
     indiceRis++;
   } else if (questions[indiceRis].incorrect_answers[0] === stringa) {
     console.log("sbagliata");

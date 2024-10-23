@@ -1,7 +1,8 @@
 //variabili con il numero di risposte corrette ed errate
-let correctAnswers = 8;
-let wrongAnswers = 3;
-let questionNumbers = correctAnswers + wrongAnswers;
+let correctAnswers = localStorage.getItem("numeroRisposteCorrette");
+console.log(correctAnswers);
+let questionNumbers = localStorage.getItem("numeroDomande");
+let wrongAnswers = questionNumbers - correctAnswers;
 
 //percentuali delle risposte
 let correctPercentage = (correctAnswers / questionNumbers) * 100;
