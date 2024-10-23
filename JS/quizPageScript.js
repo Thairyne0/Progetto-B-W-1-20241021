@@ -1062,7 +1062,7 @@ const centerTextPlugin = {
 
     // Disegna il testo senza cancellare il grafico
     ctx.fillStyle = '#FFFFFF'
-    ctx.font = 'bold 30px Arial'
+    ctx.font = 'bold 40px Arial'
     ctx.fillText(text, textX, textY)
 
     //testo before seconds

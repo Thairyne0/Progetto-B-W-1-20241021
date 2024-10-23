@@ -98,9 +98,11 @@ footer strong {
   color: #c4008f;
 }
 
-#timer-container {
-  width: 200px;
-  height: 200px;
+#timerContainer {
+  width: 150px;
+  height: 150px;
   margin-left: auto;
   margin-right: 5em;
+  margin-top: 20px;
+  float: right;
 }
