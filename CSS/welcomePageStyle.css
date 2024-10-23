@@ -4,13 +4,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Outfit', sans-serif;
-  margin-bottom: 50px;
+  
 }
 
-#logo {
-  margin-top: 40px;
-  margin-left: 120px;
+#logo img {
   width: 130px;
+  padding: 40px 100px;
 }
 
 h1 {
