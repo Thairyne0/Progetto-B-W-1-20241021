@@ -1148,6 +1148,17 @@ let j = 0;
 
 let p = 0;
 
+let intervalloRisposta = 0;
+
+const funzioneTempo = function () {
+  clearInterval(intervalloRisposta);
+  console.log("RISPOSTA ESATTA");
+  intervalloRisposta = setInterval(popolamentoDomande, 3000);
+  console.log(localStorage.getItem("rispostaEsatta"));
+  document.getElementById("pRisposta").innerText =
+    localStorage.getItem("rispostaCorretta");
+};
+
 //funzione che permette di cambiare colore ai tasti delle risposte quando selezioniati
 
 const answerFunction = function (e) {
@@ -1178,11 +1189,13 @@ let interval = 0;
 let intervalloDue = 0;
 
 const popolamentoDomande = function () {
+  document.getElementById("pRisposta").innerText = "";
   console.log(p);
   console.log(stringa + "ciao");
   console.log(questions[p].correct_answer);
   console.log(localStorage.getItem("rispostaEsatta"));
   timeLeft = totalTime;
+
   if (questions[p].correct_answer === localStorage.getItem("rispostaEsatta")) {
     console.log("corretta");
     punteggioUtente++;
@@ -1248,6 +1261,7 @@ const popolamentoDomande = function () {
       j++;
     }
   }
+  localStorage.setItem("rispostaCorretta", questions[p].correct_answer);
   boolean = false;
   console.log(j);
   indice++;
@@ -1261,10 +1275,10 @@ const popolamentoDomande = function () {
       .getElementById("next-button")
       .addEventListener("click", funzioneFinish);
 
-    intervalloDue = setInterval(funzioneFinish, 5000);
+    intervalloDue = setInterval(funzioneFinish, 60000);
   }
   clearInterval(intervallo);
-  intervallo = setInterval(popolamentoDomande, 5000);
+  intervallo = setInterval(popolamentoDomande, 60000);
 
   clearInterval(interval);
 
@@ -1280,10 +1294,12 @@ const popolamentoDomande = function () {
       clearInterval(interval);
     }
   }, 1000);
+
+  clearInterval(intervalloRisposta);
 };
 
 let nextButton = document.getElementById("next-button");
-nextButton.addEventListener("click", popolamentoDomande);
+nextButton.addEventListener("click", funzioneTempo);
 
 //hover per il tasto next
 

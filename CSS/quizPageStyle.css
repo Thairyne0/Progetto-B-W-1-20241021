@@ -28,6 +28,7 @@ main article {
   margin-bottom: 70px;
 }
 main div {
+  height: 70px;
   margin-top: 20px;
 }
 
@@ -108,4 +109,18 @@ footer strong {
   margin-right: 5em;
   margin-top: 20px;
   float: right;
+}
+
+footer #span-feedback {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #c4008f;
+}
+
+footer #pRisposta {
+  margin-top: 5px;
+  font-size: 1.4em;
+  font-weight: 600;
 }
