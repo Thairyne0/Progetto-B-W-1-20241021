@@ -703,18 +703,17 @@ const questions = [
     type: "multiple",
     difficulty: "Hard",
     question: "What does 'SOLID' stand for in object-oriented design?",
-    correct_answer:
-      "Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion",
+    correct_answer: "Single Responsibility, Open-Closed",
     incorrect_answers: [
-      "Simple, Open-Source, Low-Cost, Independent, Dynamic",
-      "Single-User, Online, Local, In-Memory, Distributed",
-      "Systematic, Ordered, Logical, Independent, Dynamic",
+      "Simple, Open-Source",
+      "Single-User, Online, Local",
+      "Systematic, Ordered, Logical",
     ],
     answer: [
-      "Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion",
-      "Simple, Open-Source, Low-Cost, Independent, Dynamic",
-      "Single-User, Online, Local, In-Memory, Distributed",
-      "Systematic, Ordered, Logical, Independent, Dynamic",
+      "Single Responsibility, Open-Closed",
+      "Simple, Open-Source, Low-Cost",
+      "Single-User, Online, Local",
+      "Systematic, Ordered, Logical",
     ],
   },
   {
@@ -1056,7 +1055,7 @@ const centerTextPlugin = {
 
     const text1 = "SECONDI";
     const text2 = "RIMANENTI";
-    const text = timeLeft + "s",
+    const text = timeLeft,
       textX = width / 2,
       textY = height / 2;
 
@@ -1112,18 +1111,19 @@ const chart = new Chart(ctx, {
 });
 
 // Aggiorna il timer ogni secondo
-const interval = setInterval(() => {
-  timeLeft--;
+// const interval = setInterval(() => {
+//   timeLeft--;
 
-  // Aggiorna i dati del grafico
-  chart.data.datasets[0].data = [totalTime - timeLeft, timeLeft];
-  chart.update();
+//   // Aggiorna i dati del grafico
+//   chart.data.datasets[0].data = [totalTime - timeLeft, timeLeft];
+//   chart.update();
 
-  // Ferma il timer quando il tempo raggiunge 0
-  if (timeLeft <= 0) {
-    clearInterval(interval);
-  }
-}, 1000);
+//   // Ferma il timer quando il tempo raggiunge 0
+//   if (timeLeft <= 0) {
+//     clearInterval(interval);
+
+//   }
+// }, 1000);
 
 //dichiarazione di varie variabili utili per le varie funzioni
 let difficolta = localStorage.getItem("difficoltaDomande");
@@ -1171,6 +1171,11 @@ const funzioneFinish = function () {
 };
 
 //funzione che gestisce il popolamento della domanda e delle risposte e il controllo se la risposta selezionata e giusta nel momento del submit
+let intervallo = 0;
+
+let interval = 0;
+
+let intervalloDue = 0;
 
 const popolamentoDomande = function () {
   console.log(p);
@@ -1244,19 +1249,37 @@ const popolamentoDomande = function () {
     }
   }
   boolean = false;
-
+  console.log(j);
   indice++;
   document.getElementById("attuale-question-number").innerText = indice;
-
+  clearInterval(intervalloDue);
   console.log("sono arrivato");
-  if (indice >= numeroDomande) {
+  if (j >= numeroDomande && indice >= numeroDomande) {
     console.log("sono entrato");
     document.getElementById("next-button").innerText = "Finish";
     document
       .getElementById("next-button")
       .addEventListener("click", funzioneFinish);
+
+    intervalloDue = setInterval(funzioneFinish, 5000);
   }
-  setInterval(popolamentoDomande, 60000);
+  clearInterval(intervallo);
+  intervallo = setInterval(popolamentoDomande, 5000);
+
+  clearInterval(interval);
+
+  interval = setInterval(() => {
+    timeLeft--;
+
+    // Aggiorna i dati del grafico
+    chart.data.datasets[0].data = [totalTime - timeLeft, timeLeft];
+    chart.update();
+
+    // Ferma il timer quando il tempo raggiunge 0
+    if (timeLeft <= 0) {
+      clearInterval(interval);
+    }
+  }, 1000);
 };
 
 let nextButton = document.getElementById("next-button");
