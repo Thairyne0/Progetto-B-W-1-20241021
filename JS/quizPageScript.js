@@ -1157,6 +1157,17 @@ const funzioneTempo = function () {
   console.log(localStorage.getItem("rispostaEsatta"));
   document.getElementById("pRisposta").innerText =
     localStorage.getItem("rispostaCorretta");
+  for (let i = 0; i < arraybuttonsAnswer.length; i++) {
+    arraybuttonsAnswer[i].style.backgroundColor = "#ff3030";
+    if (
+      arraybuttonsAnswer[i].innerText ===
+      localStorage.getItem("rispostaCorretta")
+    ) {
+      arraybuttonsAnswer[i].style.backgroundColor = "#8bff30";
+    }
+    //   arraybuttonsAnswer[i].addEventListener("mouseover", hoverFunction);
+    //   arraybuttonsAnswer[i].addEventListener("mouseout", outFunctionBig);
+  }
 };
 
 //funzione che permette di cambiare colore ai tasti delle risposte quando selezioniati
