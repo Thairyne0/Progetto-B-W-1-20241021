@@ -13,9 +13,9 @@ const questions = [
       "Random Allocation Memory",
     ],
     answer: [
-      "Random Access Memory",
       "Read Access Memory",
       "Run Access Memory",
+      "Random Access Memory",
       "Random Allocation Memory",
     ],
   },
@@ -44,7 +44,7 @@ const questions = [
     question: "Which company developed the Windows operating system?",
     correct_answer: "Microsoft",
     incorrect_answers: ["Apple", "IBM", "Google"],
-    answer: ["Microsoft", "Apple", "IBM", "Google"],
+    answer: ["Apple", "Microsoft", "IBM", "Google"],
   },
   {
     category: "Science: Computers",
@@ -53,7 +53,7 @@ const questions = [
     question: "Which language is primarily used for web development?",
     correct_answer: "HTML",
     incorrect_answers: ["C++", "Python", "Java"],
-    answer: ["HTML", "C++", "Python", "Java"],
+    answer: ["C++", "Python", "Java", "HTML"],
   },
   {
     category: "Science: Computers",
@@ -80,7 +80,7 @@ const questions = [
     question: "Which company created the iPhone?",
     correct_answer: "Apple",
     incorrect_answers: ["Microsoft", "Samsung", "Google"],
-    answer: ["Apple", "Microsoft", "Samsung", "Google"],
+    answer: ["Microsoft", "Samsung", "Apple", "Google"],
   },
   {
     category: "Science: Computers",
@@ -89,7 +89,7 @@ const questions = [
     question: "What is the shortcut key for copying text on most computers?",
     correct_answer: "Ctrl + C",
     incorrect_answers: ["Ctrl + V", "Ctrl + X", "Ctrl + Z"],
-    answer: ["Ctrl + C", "Ctrl + V", "Ctrl + X", "Ctrl + Z"],
+    answer: ["Ctrl + V", "Ctrl + C", "Ctrl + X", "Ctrl + Z"],
   },
   {
     category: "Science: Computers",
@@ -103,9 +103,9 @@ const questions = [
       "Home Tool Markup Language",
     ],
     answer: [
-      "Hypertext Markup Language",
       "Hyperlink Markup Language",
       "Hyperlink Text Markup Language",
+      "Hypertext Markup Language",
       "Home Tool Markup Language",
     ],
   },
@@ -135,7 +135,7 @@ const questions = [
     question: "Which of these is a file extension for an image?",
     correct_answer: ".jpg",
     incorrect_answers: [".txt", ".exe", ".pdf"],
-    answer: [".jpg", ".txt", ".exe", ".pdf"],
+    answer: [".txt", ".jpg", ".exe", ".pdf"],
   },
   {
     category: "Science: Computers",
@@ -149,9 +149,9 @@ const questions = [
       "Universal Serial Board",
     ],
     answer: [
-      "Universal Serial Bus",
       "Universal System Board",
       "United Serial Bus",
+      "Universal Serial Bus",
       "Universal Serial Board",
     ],
   },
@@ -162,7 +162,7 @@ const questions = [
     question: "Which of the following is an open-source operating system?",
     correct_answer: "Linux",
     incorrect_answers: ["Windows", "iOS", "macOS"],
-    answer: ["Linux", "Windows", "iOS", "macOS"],
+    answer: ["Windows", "iOS", "Linux", "macOS"],
   },
   {
     category: "Science: Computers",
@@ -171,7 +171,7 @@ const questions = [
     question: "Which of the following is used to style websites?",
     correct_answer: "CSS",
     incorrect_answers: ["JavaScript", "HTML", "PHP"],
-    answer: ["CSS", "JavaScript", "HTML", "PHP"],
+    answer: ["JavaScript", "HTML", "CSS", "PHP"],
   },
   {
     category: "Science: Computers",
@@ -227,8 +227,8 @@ const questions = [
       "To manage passwords",
     ],
     answer: [
-      "To detect and remove malware",
       "To create viruses",
+      "To detect and remove malware",
       "To install new software",
       "To manage passwords",
     ],
@@ -245,10 +245,10 @@ const questions = [
       "Local Access Network",
     ],
     answer: [
-      "Local Area Network",
       "Large Area Network",
       "Long Area Network",
       "Local Access Network",
+      "Local Area Network",
     ],
   },
   {
@@ -258,7 +258,7 @@ const questions = [
     question: "Which of the following is a storage device?",
     correct_answer: "Hard drive",
     incorrect_answers: ["Monitor", "Keyboard", "Mouse"],
-    answer: ["Hard drive", "Monitor", "Keyboard", "Mouse"],
+    answer: ["Monitor", "Hard drive", "Keyboard", "Mouse"],
   },
   {
     category: "Science: Computers",
@@ -272,8 +272,8 @@ const questions = [
       "Virtual Personal Network",
     ],
     answer: [
-      "Virtual Private Network",
       "Virtual Public Network",
+      "Virtual Private Network",
       "Visible Private Network",
       "Virtual Personal Network",
     ],
@@ -285,7 +285,7 @@ const questions = [
     question: "Which of these companies produces the iPad?",
     correct_answer: "Apple",
     incorrect_answers: ["Microsoft", "Samsung", "Sony"],
-    answer: ["Apple", "Microsoft", "Samsung", "Sony"],
+    answer: ["Microsoft", "Apple", "Samsung", "Sony"],
   },
   {
     category: "Science: Computers",
@@ -299,9 +299,9 @@ const questions = [
       "System Error Output",
     ],
     answer: [
-      "Search Engine Optimization",
       "Secure Encryption Operations",
       "Software Engineering Optimization",
+      "Search Engine Optimization",
       "System Error Output",
     ],
   },
@@ -367,7 +367,7 @@ const questions = [
       "Which programming language is commonly used for artificial intelligence and machine learning?",
     correct_answer: "Python",
     incorrect_answers: ["C++", "Java", "Ruby"],
-    answer: ["Python", "C++", "Java", "Ruby"],
+    answer: ["C++", "Python", "Java", "Ruby"],
   },
 
   {
@@ -382,9 +382,9 @@ const questions = [
       "To route network traffic",
     ],
     answer: [
-      "To translate domain names into IP addresses",
       "To encrypt data",
       "To store website data",
+      "To translate domain names into IP addresses",
       "To route network traffic",
     ],
   },
@@ -395,7 +395,7 @@ const questions = [
     question: "Which of these is a JavaScript framework?",
     correct_answer: "React",
     incorrect_answers: ["Laravel", "Django", "Rails"],
-    answer: ["React", "Laravel", "Django", "Rails"],
+    answer: ["Laravel", "React", "Django", "Rails"],
   },
   {
     category: "Science: Computers",
@@ -409,10 +409,10 @@ const questions = [
       "Standard Query Language",
     ],
     answer: [
-      "Structured Query Language",
       "Sequential Query Language",
       "Structured Queue Language",
       "Standard Query Language",
+      "Structured Query Language",
     ],
   },
   {
@@ -422,7 +422,7 @@ const questions = [
     question: "Which type of network spans the largest geographical area?",
     correct_answer: "WAN",
     incorrect_answers: ["LAN", "MAN", "PAN"],
-    answer: ["WAN", "LAN", "MAN", "PAN"],
+    answer: ["LAN", "MAN", "WAN", "PAN"],
   },
   {
     category: "Science: Computers",
@@ -432,7 +432,7 @@ const questions = [
       "Which of the following is a relational database management system?",
     correct_answer: "MySQL",
     incorrect_answers: ["MongoDB", "Cassandra", "Hadoop"],
-    answer: ["MySQL", "MongoDB", "Cassandra", "Hadoop"],
+    answer: ["MongoDB", "MySQL", "Cassandra", "Hadoop"],
   },
   {
     category: "Science: Computers",
@@ -459,7 +459,7 @@ const questions = [
     question: "Which of these is a version control system?",
     correct_answer: "Git",
     incorrect_answers: ["Docker", "Nginx", "Apache"],
-    answer: ["Git", "Docker", "Nginx", "Apache"],
+    answer: ["Docker", "Git", "Nginx", "Apache"],
   },
   {
     category: "Science: Computers",
@@ -468,7 +468,7 @@ const questions = [
     question: "Which of these algorithms is used for sorting?",
     correct_answer: "Merge Sort",
     incorrect_answers: ["Dijkstra's Algorithm", "A* Algorithm", "RSA"],
-    answer: ["Merge Sort", "Dijkstra's Algorithm", "A* Algorithm", "RSA"],
+    answer: ["Dijkstra's Algorithm", "Merge Sort", "A* Algorithm", "RSA"],
   },
   {
     category: "Science: Computers",
@@ -477,7 +477,7 @@ const questions = [
     question: "What is Docker primarily used for?",
     correct_answer: "Containerization",
     incorrect_answers: ["Virtualization", "Encryption", "Backup"],
-    answer: ["Containerization", "Virtualization", "Encryption", "Backup"],
+    answer: ["Virtualization", "Containerization", "Encryption", "Backup"],
   },
   {
     category: "Science: Computers",
@@ -486,7 +486,7 @@ const questions = [
     question: "Which of the following is a NoSQL database?",
     correct_answer: "CouchDB",
     incorrect_answers: ["PostgreSQL", "SQLite", "MariaDB"],
-    answer: ["CouchDB", "PostgreSQL", "SQLite", "MariaDB"],
+    answer: ["PostgreSQL", "CouchDB", "SQLite", "MariaDB"],
   },
   {
     category: "Science: Computers",
@@ -495,7 +495,7 @@ const questions = [
     question: "Which language is used to create macros in Microsoft Excel?",
     correct_answer: "VBA",
     incorrect_answers: ["Java", "Python", "C#"],
-    answer: ["VBA", "Java", "Python", "C#"],
+    answer: ["Java", "Python", "VBA", "C#"],
   },
   {
     category: "Science: Computers",
@@ -527,10 +527,10 @@ const questions = [
       "Global Processing Unit",
     ],
     answer: [
-      "Graphics Processing Unit",
       "General Processing Unit",
       "Graphical Performance Unit",
       "Global Processing Unit",
+      "Graphics Processing Unit",
     ],
   },
   {
@@ -540,7 +540,7 @@ const questions = [
     question: "Which company is the creator of the Flutter framework?",
     correct_answer: "Google",
     incorrect_answers: ["Facebook", "Microsoft", "Amazon"],
-    answer: ["Google", "Facebook", "Microsoft", "Amazon"],
+    answer: ["Facebook", "Google", "Microsoft", "Amazon"],
   },
   {
     category: "Science: Computers",
@@ -692,8 +692,8 @@ const questions = [
       "Simulated Annealing",
     ],
     answer: [
-      "Dynamic Programming",
       "Greedy Algorithm",
+      "Dynamic Programming",
       "Backtracking",
       "Simulated Annealing",
     ],
@@ -710,9 +710,9 @@ const questions = [
       "Systematic, Ordered, Logical",
     ],
     answer: [
-      "Single Responsibility, Open-Closed",
       "Simple, Open-Source, Low-Cost",
       "Single-User, Online, Local",
+      "Single Responsibility, Open-Closed",
       "Systematic, Ordered, Logical",
     ],
   },
@@ -723,7 +723,7 @@ const questions = [
     question: "Which data structure uses a LIFO (Last In, First Out) approach?",
     correct_answer: "Stack",
     incorrect_answers: ["Queue", "Tree", "Graph"],
-    answer: ["Stack", "Queue", "Tree", "Graph"],
+    answer: ["Queue", "Tree", "Stack", "Graph"],
   },
   {
     category: "Science: Computers",
@@ -742,7 +742,7 @@ const questions = [
       "What is the minimum number of spanning trees in a connected graph with 'n' vertices and 'm' edges?",
     correct_answer: "One",
     incorrect_answers: ["n-1", "m-1", "Two"],
-    answer: ["One", "n-1", "m-1", "Two"],
+    answer: ["n-1", "One", "m-1", "Two"],
   },
   {
     category: "Science: Computers",
@@ -756,8 +756,8 @@ const questions = [
       "Cross-Site Security",
     ],
     answer: [
-      "Cross-Site Scripting",
       "XML Script Syntax",
+      "Cross-Site Scripting",
       "Cross-Site Search",
       "Cross-Site Security",
     ],
@@ -789,7 +789,7 @@ const questions = [
       "Which memory management technique allows for non-contiguous memory allocation?",
     correct_answer: "Paging",
     incorrect_answers: ["Segmentation", "Swapping", "Fragmentation"],
-    answer: ["Paging", "Segmentation", "Swapping", "Fragmentation"],
+    answer: ["Segmentation", "Swapping", "Paging", "Fragmentation"],
   },
   {
     category: "Science: Computers",
@@ -798,7 +798,7 @@ const questions = [
     question: "What is the time complexity of binary search in a sorted array?",
     correct_answer: "O(log n)",
     incorrect_answers: ["O(n)", "O(n log n)", "O(n^2)"],
-    answer: ["O(log n)", "O(n)", "O(n log n)", "O(n^2)"],
+    answer: ["O(n)", "O(log n)", "O(n log n)", "O(n^2)"],
   },
   {
     category: "Science: Computers",
@@ -812,10 +812,10 @@ const questions = [
       "Authentication Encryption Standard",
     ],
     answer: [
-      "Advanced Encryption Standard",
       "Advanced Encoding Standard",
       "Algorithm Encryption Scheme",
       "Authentication Encryption Standard",
+      "Advanced Encryption Standard",
     ],
   },
   {
@@ -831,8 +831,8 @@ const questions = [
       "Linear Regression",
     ],
     answer: [
-      "Support Vector Machines",
       "K-Means Clustering",
+      "Support Vector Machines",
       "Principal Component Analysis",
       "Linear Regression",
     ],
@@ -844,7 +844,7 @@ const questions = [
     question: "What is the maximum value of an unsigned 8-bit integer?",
     correct_answer: "255",
     incorrect_answers: ["127", "256", "1023"],
-    answer: ["255", "127", "256", "1023"],
+    answer: ["127", "255", "256", "1023"],
   },
   {
     category: "Science: Computers",
@@ -1158,12 +1158,14 @@ const funzioneTempo = function () {
   document.getElementById("pRisposta").innerText =
     localStorage.getItem("rispostaCorretta");
   for (let i = 0; i < arraybuttonsAnswer.length; i++) {
-    arraybuttonsAnswer[i].style.backgroundColor = "#ff3030";
+    arraybuttonsAnswer[i].style.backgroundColor = "#D20094";
+    arraybuttonsAnswer[i].style.color = "black";
     if (
       arraybuttonsAnswer[i].innerText ===
       localStorage.getItem("rispostaCorretta")
     ) {
-      arraybuttonsAnswer[i].style.backgroundColor = "#8bff30";
+      arraybuttonsAnswer[i].style.backgroundColor = "#39EDED";
+      arraybuttonsAnswer[i].style.color = "black";
     }
     //   arraybuttonsAnswer[i].addEventListener("mouseover", hoverFunction);
     //   arraybuttonsAnswer[i].addEventListener("mouseout", outFunctionBig);
@@ -1175,6 +1177,7 @@ const funzioneTempo = function () {
 const answerFunction = function (e) {
   for (let i = 0; i < arraybuttonsAnswer.length; i++) {
     arraybuttonsAnswer[i].style.backgroundColor = "rgba(255, 255, 255, 0.164)";
+    arraybuttonsAnswer[i].style.color = "white";
   }
   // console.log(e.target);
   e.preventDefault();
@@ -1232,6 +1235,7 @@ const popolamentoDomande = function () {
 
   for (let i = 0; i < arraybuttonsAnswer.length; i++) {
     arraybuttonsAnswer[i].style.backgroundColor = "rgba(255, 255, 255, 0.164)";
+    arraybuttonsAnswer[i].style.color = "white";
   }
   console.log(localStorage.getItem("difficoltaDomande"));
 
